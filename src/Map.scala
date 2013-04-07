@@ -8,28 +8,27 @@
  
 import collection.mutable.{ HashMap, ListBuffer }
 
-class Map(file: String) {
+class Map(file: String)
+{
 /* CONSTRUCTOR *****************************************/
-	// FIELDS
-	val names = new ListBuffer[String]
-	val graph = (new HashMap[Int, Vector[Tuple2[Int, Int]]]
-							withDefaultValue Vector.empty)
-	var cities = 0
-	var directed = false
+	// PRIVATE FIELDS
+	private val lines = io.Source.fromFile(file + "MapData.txt").getLines
+	private val names = new ListBuffer[String]
+	private val graph = (new HashMap[Int, Vector[Tuple2[Int, Int]]]
+											withDefaultValue Vector.empty)
+	private val Array(n, t) = lines.next.split(" ")
 
-	// OPEN & READ FILE INTO FIELDS
-	val lines = io.Source.fromFile(file + "MapData.txt").getLines.toList
-	for(e <- lines) {
-		// PARSE ENTRY
+	// PUBLIC FIELDS
+	val cities = n.toInt
+	val directed = t match { case "U" => false; case "D" => true; }
+
+	// PARSE FILE
+	for(e <- lines.toList) {
+		// PARSE EDGE ENTRY
 		if(e.split(" ").length == 3) {
 			var Array(a, b, w) = e.split(" ").map(_.toInt)
 			graph(a) = graph(a) :+ ((b, w))
-		}
-		// PARSE HEADER
-		else if(e.split(" ").length == 2) {
-			var Array(n, t) = e.split(" ")
-			cities = n.toInt
-			directed = t match { case "U" => false; case "D" => true; }
+			if(!directed) graph(b) = graph(b) :+ ((a, w))
 		}
 		// PARSE NAMES
 		else {
@@ -41,11 +40,16 @@ class Map(file: String) {
 	def getCityName(num: Int): String = {
 		names(num)
 	}
+	
 	def getCityNumber(name: String): Int = {
 		names.indexOf(name)
 	}
 
-	def getDistance(a: Int, b: Int): Option[Tuple2[Int, Int]] = {
-		graph(a).find(p => p._1 == b)
+	def getDistance(a: Int, b: Int): Int = {
+		if(a == b) return 0;
+		graph(a).find(p => p._1 == b) match {
+			case Some(r) => r._2
+			case None => Integer.MAX_VALUE
+		}
 	}
 }
