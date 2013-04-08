@@ -38,8 +38,8 @@ class ShortestPath(map: Map, ui: UI)
 	}
 
 	private def search(start: Int, end: Int) = {
-		ui.log("\nTRACE OF TARGETS:  ")
-		var numTargets = 0
+		ui.log("\nTRACE OF TARGETS:  " + map.getCityName(start) + " ")
+		var numTargets = 1
 		while(!included(end)) {
 			val target = (distance.zipWithIndex filter (p => included(p._2) != true)).min._2
 			ui.log(map.getCityName(target) + " ")
