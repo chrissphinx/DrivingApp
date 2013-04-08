@@ -176,7 +176,7 @@ SHORTEST ROUTE:  g > f > c > a
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 e (4) TO b (1)
 
-TRACE OF TARGETS:  e a d b [4 targets]
+TRACE OF TARGETS:  e a b [3 targets]
 
 ERROR – no route to destination exists
 
