@@ -1,0 +1,217 @@
+STATUS:  OK, Europe MapData loaded - contains 19 cities
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+Kalamazoo (X) TO Berlin (2)
+ERROR – one of these cities is not part of this map
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+Munich (11) TO London (X)
+ERROR – one of these cities is not part of this map
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+Rome (15) TO Rome (15)
+
+TRACE OF TARGETS:  [0 targets]
+
+DISTANCE:  0
+SHORTEST ROUTE:  Rome
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+Paris (13) TO Warsaw (18)
+
+TRACE OF TARGETS:  Brussels Amsterdam Genoa Bern Hamburg Madrid Copenhagen Berlin Munich Rome Trieste Prague Naples Lisbon Vienna Warsaw [16 targets]
+
+DISTANCE:  1254
+SHORTEST ROUTE:  Paris > Brussels > Amsterdam > Hamburg > Berlin > Warsaw
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+Warsaw (18) TO Paris (13)
+
+TRACE OF TARGETS:  Berlin Budapest Vienna Prague Hamburg Munich Belgrade Copenhagen Trieste Amsterdam Bern Brussels Genoa Rome Paris [15 targets]
+
+DISTANCE:  1254
+SHORTEST ROUTE:  Warsaw > Berlin > Hamburg > Amsterdam > Brussels > Paris
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+Brussels (4) TO Belgrade (1)
+
+TRACE OF TARGETS:  Amsterdam Paris Bern Hamburg Copenhagen Berlin Munich Genoa Prague Vienna Trieste Warsaw Madrid Rome Budapest Naples Lisbon Belgrade [18 targets]
+
+DISTANCE:  1388
+SHORTEST ROUTE:  Brussels > Amsterdam > Munich > Vienna > Budapest > Belgrade
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+Belgrade (1) TO Brussels (4)
+
+TRACE OF TARGETS:  Budapest Trieste Vienna Prague Warsaw Munich Genoa Berlin Rome Bern Naples Hamburg Copenhagen Amsterdam Brussels [15 targets]
+
+DISTANCE:  1388
+SHORTEST ROUTE:  Belgrade > Budapest > Vienna > Munich > Amsterdam > Brussels
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+Belgrade (1) TO Prague (14)
+
+TRACE OF TARGETS:  Budapest Trieste Vienna Prague [4 targets]
+
+DISTANCE:  603
+SHORTEST ROUTE:  Belgrade > Budapest > Vienna > Prague
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+Brussels (4) TO Budapest (5)
+
+TRACE OF TARGETS:  Amsterdam Paris Bern Hamburg Copenhagen Berlin Munich Genoa Prague Vienna Trieste Warsaw Madrid Rome Budapest [15 targets]
+
+DISTANCE:  1125
+SHORTEST ROUTE:  Brussels > Amsterdam > Munich > Vienna > Budapest
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+Amsterdam (0) TO Brussels (4)
+
+TRACE OF TARGETS:  Brussels [1 targets]
+
+DISTANCE:  164
+SHORTEST ROUTE:  Amsterdam > Brussels
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+Amsterdam (0) TO Bern (3)
+
+TRACE OF TARGETS:  Brussels Hamburg Paris Copenhagen Berlin Munich Bern [7 targets]
+
+DISTANCE:  558
+SHORTEST ROUTE:  Amsterdam > Bern
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+Rome (15) TO Berlin (2)
+
+TRACE OF TARGETS:  Naples Genoa Trieste Munich Bern Prague Vienna Budapest Belgrade Paris Berlin [11 targets]
+
+DISTANCE:  975
+SHORTEST ROUTE:  Rome > Munich > Prague > Berlin
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+Naples (12) TO Warsaw (18)
+
+TRACE OF TARGETS:  Rome Genoa Trieste Munich Bern Prague Vienna Budapest Belgrade Paris Berlin Brussels Amsterdam Hamburg Warsaw [15 targets]
+
+DISTANCE:  1354
+SHORTEST ROUTE:  Naples > Rome > Trieste > Budapest > Warsaw
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+Warsaw (18) TO Naples (12)
+
+TRACE OF TARGETS:  Berlin Budapest Vienna Prague Hamburg Munich Belgrade Copenhagen Trieste Amsterdam Bern Brussels Genoa Rome Paris Naples [16 targets]
+
+DISTANCE:  1354
+SHORTEST ROUTE:  Warsaw > Budapest > Trieste > Rome > Naples
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+Paris (13) TO Warsaw (18)
+
+TRACE OF TARGETS:  Brussels Amsterdam Genoa Bern Hamburg Madrid Copenhagen Berlin Munich Rome Trieste Prague Naples Lisbon Vienna Warsaw [16 targets]
+
+DISTANCE:  1254
+SHORTEST ROUTE:  Paris > Brussels > Amsterdam > Hamburg > Berlin > Warsaw
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+Vienna (17) TO Belgrade (1)
+
+TRACE OF TARGETS:  Budapest Prague Munich Trieste Berlin Belgrade [6 targets]
+
+DISTANCE:  418
+SHORTEST ROUTE:  Vienna > Budapest > Belgrade
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+Lisbon (9) TO Warsaw (18)
+
+TRACE OF TARGETS:  Madrid Paris Genoa Brussels Bern Amsterdam Rome Trieste Naples Munich Hamburg Prague Vienna Budapest Copenhagen Berlin Belgrade Warsaw [18 targets]
+
+DISTANCE:  2398
+SHORTEST ROUTE:  Lisbon > Madrid > Paris > Brussels > Amsterdam > Hamburg > Berlin > Warsaw
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+Vienna (17) TO Belgrade (1)
+
+TRACE OF TARGETS:  Budapest Prague Munich Trieste Berlin Belgrade [6 targets]
+
+DISTANCE:  418
+SHORTEST ROUTE:  Vienna > Budapest > Belgrade
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+
+STATUS:  OK, Other MapData loaded - contains 7 cities
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+c (2) TO a (0)
+
+TRACE OF TARGETS:  f b a [3 targets]
+
+DISTANCE:  5
+SHORTEST ROUTE:  c > a
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+a (0) TO c (2)
+
+TRACE OF TARGETS:  e d b g f c [6 targets]
+
+DISTANCE:  16
+SHORTEST ROUTE:  a > b > g > f > c
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+a (0) TO d (3)
+
+TRACE OF TARGETS:  e d [2 targets]
+
+DISTANCE:  8
+SHORTEST ROUTE:  a > d
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+g (6) TO a (0)
+
+TRACE OF TARGETS:  b f c a [4 targets]
+
+DISTANCE:  10
+SHORTEST ROUTE:  g > f > c > a
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+e (4) TO b (1)
+
+TRACE OF TARGETS:  a d b [3 targets]
+
+ERROR – no route to destination exists
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+d (3) TO g (6)
+
+TRACE OF TARGETS:  c f b a g [5 targets]
+
+DISTANCE:  15
+SHORTEST ROUTE:  d > c > f > b > g
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+g (6) TO d (3)
+
+TRACE OF TARGETS:  b f c a e d [6 targets]
+
+DISTANCE:  15
+SHORTEST ROUTE:  g > f > c > d
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+b (1) TO f (5)
+
+TRACE OF TARGETS:  g f [2 targets]
+
+DISTANCE:  3
+SHORTEST ROUTE:  b > g > f
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+a (0) TO a (0)
+
+TRACE OF TARGETS:  [0 targets]
+
+DISTANCE:  0
+SHORTEST ROUTE:  a
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+

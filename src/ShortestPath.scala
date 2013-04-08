@@ -17,18 +17,8 @@ class ShortestPath(map: Map, ui: UI)
 
 	def findShortestPath(start: Int, end: Int) = {
 		initialize(start)
-		println(map.getCityName(start) + " to " + map.getCityName(end))
-		println("** SEARCH ***********")
 		search(start, end)
-		println("__ INCLUDED __________")
-		included foreach println
-		println("__ " + start + " to " + end + " DISTANCES __________")
-		distance foreach println
-		println("__ PATH __________")
-		path foreach println
-		println("__ END __________")
 		reportAnswer(end)
-		println("\n")
 	}
 
 	private def initialize(start: Int) = {
@@ -48,9 +38,12 @@ class ShortestPath(map: Map, ui: UI)
 	}
 
 	private def search(start: Int, end: Int) = {
+		ui.log("\nTRACE OF TARGETS:  ")
+		var numTargets = 0
 		while(!included(end)) {
 			val target = (distance.zipWithIndex filter (p => included(p._2) != true)).min._2
-			println(map.getCityName(target) + " at " + distance(target))
+			ui.log(map.getCityName(target) + " ")
+			numTargets += 1
 			included(target) = true
 			for(i <- 0 to N - 1) {
 				if(included(i) == false) {
@@ -64,18 +57,28 @@ class ShortestPath(map: Map, ui: UI)
 				}
 			}
 		}
+		ui.log("[" + numTargets + " targets]\n\n")
 	}
 
 	private def reportAnswer(end: Int) = {
-		println("TOTAL DISTANCE: " + distance(end))
-		val builder = new VectorBuilder[Int]
-		builder += end
-		var following = path(end)
-		while(following != -1) {
-			builder += following
-			following = path(following)
+		if(distance(end) < 0) {
+			ui.log("ERROR – no route to destination exists\n\n")
+		} else {
+			ui.log("DISTANCE:  " + distance(end) + "\n")
+			val builder = new VectorBuilder[Int]
+			builder += end
+			var following = path(end)
+			while(following != -1) {
+				builder += following
+				following = path(following)
+			}
+			val finalPath = builder.result.reverse
+			ui.log("SHORTEST ROUTE:  ")
+			for(i <- 0 to finalPath.length - 1) {
+				ui.log(map.getCityName(finalPath(i)))
+				if(i != finalPath.length - 1) ui.log(" > ")
+			}
+			ui.log("\n\n")
 		}
-		val finalPath = builder.result.reverse
-		finalPath foreach println
 	}
 }

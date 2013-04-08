@@ -18,7 +18,7 @@ class Map(file: String)
 											withDefaultValue Vector.empty)
 	private val Array(n, t) = lines.next.split(" ")
 
-	// PUBLIC FIELDS
+	// PUBLIC FIELDS (HEADER)
 	val cities = n.toInt
 	val directed = t match { case "U" => false; case "D" => true; }
 

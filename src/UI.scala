@@ -18,4 +18,12 @@ class UI(file: String) {
 			return None
 		}
 	}
+
+	def log(text: String) {
+		val file = new java.io.FileWriter("log.txt", true)
+		try {
+			file.write(text)
+		}
+		finally file.close()
+	}
 }
