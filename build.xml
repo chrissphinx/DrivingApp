@@ -61,6 +61,8 @@
 
 			-dontwarn scala.**
 			-verbose
+			-dontskipnonpubliclibraryclasses
+			-dontskipnonpubliclibraryclassmembers
 
 			-keepclasseswithmembers public class * {
 			    public static void main(java.lang.String[]);
