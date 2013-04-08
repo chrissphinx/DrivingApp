@@ -38,7 +38,11 @@ class Map(file: String)
 
 /* METHODS *********************************************/
 	def getCityName(num: Int): String = {
-		names(num)
+		if(num != -1) {
+			names(num)
+		} else {
+			"-1"
+		}
 	}
 	
 	def getCityNumber(name: String): Int = {
